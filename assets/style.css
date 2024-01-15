@@ -20,8 +20,6 @@
 
 body {
   background-image: url("./bg.jpg");
-  display: flex;
-  flex-direction: column;
 }
 /* Nav */
 .navbar {
@@ -74,11 +72,10 @@ main {
   border-radius: 20px;
   margin-top: 50px;
   border: 2px solid var(--celeste);
-  
 }
 
-#info{
-    padding-top: 50px;
+#info {
+  padding-top: 50px;
 }
 
 .info-historia {
@@ -123,7 +120,7 @@ main {
   color: var(--naranja-pastel);
 }
 
-.sub-titulo-eventos{
+.sub-titulo-eventos {
   text-align: center;
   color: var(--rosa);
   padding: 10px;
@@ -138,7 +135,7 @@ main {
   margin-bottom: 50px;
 }
 
-#exposiciones{
+#exposiciones {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -148,12 +145,12 @@ main {
   flex-direction: column;
 }
 
-.expos span{
+.expos span {
   font-weight: 800;
   color: var(--naranja-pastel);
 }
 
-.expo-img img{
+.expo-img img {
   gap: 60px;
   display: flex;
   flex-direction: column;
@@ -167,13 +164,13 @@ main {
   border-radius: 10px;
 }
 
-.prox-expo{
+.prox-expo {
   font-size: 18px;
   margin-top: 50px;
   text-align: center;
 }
 
-.prox-expo-1{
+.prox-expo-1 {
   color: var(--text-white);
   font-weight: 300;
   display: flex;
@@ -190,12 +187,12 @@ main {
   margin: 0;
 }
 
-.prox-expo-1{
+.prox-expo-1 {
   max-width: 400px;
   min-width: 200px;
 }
 
-.prox-expo-1 img{
+.prox-expo-1 img {
   width: 80%;
   gap: 10px;
   flex-direction: column;
@@ -203,11 +200,11 @@ main {
   border-radius: 10px;
 }
 
-.prox-expo-1 p{
+.prox-expo-1 p {
   width: 90%;
 }
 
-.tittle-expo{
+.tittle-expo {
   text-align: center;
   color: var(--rosa);
   padding: 20px;
@@ -218,4 +215,65 @@ main {
   flex-direction: column;
   margin-left: auto;
   margin-right: auto;
+}
+
+.divider{
+  border: 0.5px solid var(--rosa);
+}
+
+footer{
+  background-color: var(--background);
+}
+
+.footer-links{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin-top: 13px;
+  gap: 15px;
+}
+
+.footer-links img{
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.footer-text{
+  text-align: center;
+  color: var(--text-white);
+  font-weight: 400;
+  padding-top: 50px;
+}
+
+.derechos{
+  color: var(--celeste);
+  text-align: center;
+  font-weight: 300;
+  padding-top: 40px;
+}
+
+.container {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  /* width: 70%; */
+}
+
+.direccion, .politicas {
+  font-weight: 300;
+}
+
+.direccion {
+  color: var(--text-white);
+  text-align: start;
+  width: 26%;
+  margin-left: 20%;
+  /* margin-left: 10%; */
+}
+
+.politicas {
+  text-align: right;
+  /* margin-right: 10%; */
 }
