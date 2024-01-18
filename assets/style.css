@@ -29,15 +29,15 @@ body {
   width: 100%;
   height: 90px;
   color: var(--text-white);
+  font-size: 14px;
+  gap: 10px;
+  justify-content: space-between;
 }
 
 .navbar-list {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
   gap: 40px;
   padding-right: 50px;
-  padding-left: 600px;
 }
 
 .navbar img {
@@ -51,7 +51,7 @@ body {
 
 .navbar-list li:first-child a {
   color: var(--naranja-pastel);
-  font-weight: 800;
+  font-weight: 900;
 }
 
 /* MAIN */
@@ -85,6 +85,21 @@ main {
   align-items: center;
   width: 50%;
   padding-left: 300px;
+}
+
+.info-historia p {
+  text-wrap: pretty;
+}
+
+.info-historia a {
+  color: var(--naranja-pastel);
+  font-weight: 800;
+  transition: color 0.3s ease;
+}
+
+.info-historia :hover a {
+  color: var(--rosa);
+  font-size: 18px;
 }
 
 .info-historia span {
@@ -137,12 +152,29 @@ main {
 
 #exposiciones {
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+  width: 100%;
   margin-top: 50px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+
+.expos a {
+  color: var(--naranja-pastel);
+  font-weight: 800;
+  transition: color 0.3s ease;
+}
+
+.expos p{
+  width: 70%;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.expos :hover a {
+  color: var(--rosa);
+  font-size: 18px;
 }
 
 .expos span {
@@ -151,17 +183,12 @@ main {
 }
 
 .expo-img img {
-  gap: 60px;
-  display: flex;
-  flex-direction: column;
-  width: 550px;
-  justify-content: center;
-  margin-top: 50px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 50px;
+  width: 25%;
+  margin-top: 25px;
+  margin-left: 20px;
   border: solid var(--naranja-pastel);
   border-radius: 10px;
+  margin-bottom: 25px;
 }
 
 .prox-expo {
@@ -181,6 +208,9 @@ main {
   flex-direction: column;
   font-weight: 400;
   text-align: center;
+  width: 100%;
+  max-width: 30%;
+  min-width: 40%;
 }
 
 .prox-expo-1 p {
@@ -188,14 +218,12 @@ main {
 }
 
 .prox-expo-1 {
-  max-width: 400px;
-  min-width: 200px;
+  
 }
 
 .prox-expo-1 img {
-  width: 80%;
+  width: 100%;
   gap: 10px;
-  flex-direction: column;
   border: solid var(--naranja-pastel);
   border-radius: 10px;
 }
@@ -217,15 +245,18 @@ main {
   margin-right: auto;
 }
 
-.divider{
+.divider {
   border: 0.5px solid var(--rosa);
+  width: 100%;
+  margin-top: 50px;
 }
 
-footer{
+footer {
   background-color: var(--background);
+  width: 100%;
 }
 
-.footer-links{
+.footer-links {
   display: flex;
   align-items: center;
   text-align: center;
@@ -234,20 +265,20 @@ footer{
   gap: 15px;
 }
 
-.footer-links img{
+.footer-links img {
   height: 50px;
   display: flex;
   align-items: center;
 }
 
-.footer-text{
+.footer-text {
   text-align: center;
   color: var(--text-white);
   font-weight: 400;
   padding-top: 50px;
 }
 
-.derechos{
+.derechos {
   color: var(--celeste);
   text-align: center;
   font-weight: 300;
@@ -261,7 +292,8 @@ footer{
   /* width: 70%; */
 }
 
-.direccion, .politicas {
+.direccion,
+.politicas {
   font-weight: 300;
 }
 
