@@ -21,7 +21,7 @@
           <li><a href="profes.html">Profesores</a></li>
           <li><a href="#">Galería Estudiantil</a></li>
           <li><a href="campus.html">Campus</a></li>
-          <li><a href="#">Contacto</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
         </ul>
       </div>
     </section>
@@ -30,13 +30,13 @@
         
         <section>
             <div class="container-log">
-                <div class="login">
+                <div class="input-group">
                     <div class="log-text">
                         <h2>Campus</h2>
                     </div>
                     <div class="log-user">
                         <div class="input-log">
-                        <input type="text" id="log-usuario" class="input-box" required>
+                        <input type="email" id="log-usuario" class="input-box" required>
                         <label for="log-usuario">Email/Usuario</label>
                     </div>
                     </div>
@@ -49,7 +49,7 @@
                         <label for="formcheck">Recordarme</label>
                     </div>
                     <div class="input-log">
-                        <input type="submit" value="Login" class="input-submit">
+                        <input type="submit" value="Iniciar sesión" class="input-submit">
                     </div>
                     <div class="recuperar">
                         <a href="#">Recuperar Contraseña</a>
@@ -57,6 +57,62 @@
                 </div>
             </div>
         </section>
+
+    <!-- registrar -->
+    <section>
+      <div class="container-reg">
+          <div class="registrar">
+              <div class="reg-text">
+                  <h2>Campus</h2>
+              </div>
+              <div class="log-user">
+                  <div class="input-reg">
+                  <input type="text" id="reg-usuario" class="input-box" required>
+                  <label for="reg-usuario">Nombre Completo</label>
+              </div>
+              </div>
+              <div class="log-user">
+                  <input type="email" id="reg-pass" class="input-box" required>
+                  <label for="reg-pass">Email</label>
+              </div>
+              <div class="log-user">
+                  <input type="password" id="reg-pass" class="input-box" required>
+                  <label for="log-pass">Contraseña</label>
+              </div>
+              <!-- <div class="remember">
+                  <input type="checkbox" id="formcheck" class="check">
+                  <label for="formcheck">Recordarme</label>
+              </div> -->
+              <div class="input-reg">
+                  <input type="submit" value="Registrarte" class="input-submit">
+              </div>
+              <!-- <div class="recuperar">
+                  <a href="#">Recuperar Contraseña</a>
+              </div> -->
+          </div>
+      </div>
+  </section>
+    <!-- switch -->
+        <div class="switch">
+          <input type="button" value="Registrarte" class="input-reg" onclick="toggleRegistro()">
+
+          
+        </div>
+        <script>
+          function toggleRegistro() {
+            var registroDiv = document.querySelector('.registrar');
+            var inputGroup = document.querySelector('.input-group');
+            
+            // Alternar la visibilidad del input-group y el div de registro
+            if (inputGroup.style.display === 'none' || inputGroup.style.display === '') {
+              inputGroup.style.display = 'block';
+              registroDiv.style.display = 'none';
+            } else {
+              inputGroup.style.display = 'none';
+              registroDiv.style.display = 'block';
+            }
+          }
+        </script>
 
       <div class="divider"></div>
     <!-- FOOTER -->

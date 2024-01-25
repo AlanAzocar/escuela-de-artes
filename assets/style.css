@@ -374,15 +374,15 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color:var(--background-card);
+  background-color: var(--background-card);
   border: 2px solid var(--celeste);
   width: 550px;
-  height: 480px;
+  height: 730px;
   border-radius: 30px;
   margin-top: 125px;
 }
 
-.login {
+.input-group {
   width: 80%;
   display: flex;
   flex-direction: column;
@@ -410,34 +410,35 @@ h3 {
   border: none;
 }
 
-.log-user label{
+.log-user label {
   position: absolute;
   left: 20px;
   top: 15px;
   font-size: 15px;
-  transition: .3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
-.input-box:focus ~ label,.input-box:valid ~ label{
+.input-box:focus ~ label,
+.input-box:valid ~ label {
   top: 2px;
   font-size: 10px;
   color: var(--rosa);
   font-weight: 500;
 }
 
-.remember{
+.remember {
   display: flex;
   font-size: 13px;
   margin: 20px 0 30px 0;
   color: var(--text-white);
 }
 
-.check{
+.check {
   margin-right: 10px;
   width: 14px;
 }
 
-.input-submit{
+.input-submit {
   width: 100%;
   height: 50px;
   font-size: 16px;
@@ -449,19 +450,148 @@ h3 {
   cursor: pointer;
 }
 
-.input-submit:hover{
+.input-submit:hover {
   background: var(--celeste);
   color: var(--background);
 }
 
-.recuperar{
+.recuperar {
   text-align: center;
   font-size: 15px;
   font-weight: 500;
   margin-top: 30px;
 }
 
-.recuperar a{
+.recuperar a {
   text-decoration: none;
   color: var(--text-white);
+}
+
+.registrar {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-reg {
+  /* display: flex;
+  justify-content: center;
+  width: 100%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 550px;
+  height: 480px;
+  position: absolute;
+  bottom: 260px;
+  left: 677px;
+}
+
+.switch {
+  display: flex;
+  position: absolute;
+  bottom: 140px;
+  background: var(--background);
+  height: 60px;
+  width: 23%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.switch a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  width: 50%;
+  border-radius: 10px;
+  z-index: 10;
+  color: var(--text-white);
+}
+
+#btn {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 145px;
+}
+
+.registrar {
+  display: none;
+  text-align: center;
+}
+
+.input-reg {
+  width: 100%;
+  height: 50px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 10px;
+  background-color: var(--celeste);
+  border: none;
+  color: var(--background-card);
+  cursor: pointer;
+}
+
+.input-reg:hover {
+  background-color: var(--naranja-pastel);
+}
+
+.contact-container {
+  margin-top: 100px;
+  background: var(--background-card);
+  width: 30%;
+  height: 360px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 120px;
+  border-radius: 10px;
+  border: 2px solid var(--celeste);
+}
+
+.contacto-body {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.contacto-email{
+  margin-bottom: 10px;
+}
+
+#contact-text,
+#email-contact {
+  background-color: var(--text-white);
+  border: none;
+  color: var(--background-card);
+  height: 30px;
+  font-weight: 500;
+  border-radius: 5px;
+}
+
+#motivo{
+  background-color: var(--text-white);
+  border: none;
+  color: var(--background-card);
+  font-weight: 500;
+  border-radius: 5px;
+}
+
+#enviar-consulta{
+  background-color: var(--naranja-pastel);
+  height: 40px;
+  font-size: 15px;
+  border-radius: 10px;
+  width: 150px;
+  color: var(--background-card);
+  font-weight: 500;
+  cursor: pointer;
+}
+
+#enviar-consulta:hover{
+  background-color: var(--celeste);
+
 }

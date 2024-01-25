@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/style.css" />
-    <link rel="icon" href="./assets/logo.png" type="image/png">
-    <title>Atelier de las Artes Visuales</title>
+    <link rel="icon" href="./assets/logo.png" type="image/png" />
+    <title>Campus/Biblioteca</title>
   </head>
   <body>
     <!-- NAVBAR -->
@@ -21,47 +21,37 @@
           <li><a href="profes.html">Profesores</a></li>
           <li><a href="#">Galería Estudiantil</a></li>
           <li><a href="campus.html">Campus</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="#">Contacto</a></li>
         </ul>
       </div>
     </section>
     <!-- MAIN -->
     <main>
-      <div class="sub-titulo">
-        <h3>Historia</h3>
+      <div class="contact-container">
+        <div class="contacto-top">
+          <h3>Contacto</h3>
+        </div>
+        <div class="contacto-body">
+            <input type="text" id="contact-text" value="Nombre">
+            <label for="contact-text"></label>
+            <input type="text" id="contact-text" value="Apellido">
+            <label for="contact-text"></label>
+        </div>
+        <div class="contacto-email">
+            <input type="email" id="email-contact" value="E-mail">
+            <label for="email-contact"></label>
+        </div>
+        <div class="consulta">
+            <label for="motivo"></label>
+            <textarea name="" id="motivo" cols="43" rows="10" value="Motivo de consulta">Consulta...</textarea>
+        </div>
+        <div class="enviar-consulta">
+            <input type="submit" value="Enviar Consulta" id="enviar-consulta">
+        </div>
       </div>
-      <section id="info">
-        <div class="info-historia">
-          <p>
-            El <span>Atelier de las Artes</span> Visuales fue fundado en 1985 en
-            el corazón de Río Colorado, Argentina, por un grupo de artistas
-            apasionados que soñaban con crear un espacio donde la creatividad y
-            la innovación pudieran florecer. Desde sus humildes comienzos en un
-            pequeño estudio, la escuela ha crecido hasta convertirse en un... <a href="historia.html">Ver Más</a>
-          </p>
-        </div>
-        <img src="./assets/exterior.ant.jpeg" alt="" />
-      </section>
-      <section id="exposiciones">
-        <div class="sub-titulo-eventos">
-          <h2>Eventos</h2>
-          <h3>Exposiciones Actuales</h3>
-        </div>
-        <div class="expos">
-          <p>
-            En la emocionante <span>Semana de las Artes</span>, nuestra escuela
-            celebra la creatividad y el talento de todos nuestros estudiantes.
-            Este evento anual transforma <a href="historia.html">Ver Más</a>
-          </p>
-          <div class="expo-img">
-            <img src="./assets/expo/actual/1.jpeg" alt="" />
-            <img src="./assets/expo/actual/2.jpeg" alt="" />
-            <img src="./assets/expo/actual/3.jpeg" alt="" />
-          </div>
-        </div>
     </main>
-    <div class="divider">
-    </div>
+    <div class="divider"></div>
+    <!-- FOOTER -->
     <footer>
       <div class="footer-text">
         <p>Redes Sociales</p>
