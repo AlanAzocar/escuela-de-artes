@@ -4,16 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="stylesheet" href="./assets/mediaqueris.css">
     <link rel="icon" href="./assets/logo.png" type="image/png">
     <title>Atelier de las Artes Visuales</title>
   </head>
   <body>
     <!-- NAVBAR -->
-    <section>
+    <section id="navbar">
+      <a href="index.html">
+        <img src="./assets/logo-completo.png" alt="" class="logo" />
+      </a>
       <div class="navbar">
-        <a href="index.html">
-          <img src="./assets/logo-completo.png" alt="" />
-        </a>
+        <label for="menu-toggle" class="menu-label">
+          <img src="./assets/menu.png" alt="" class="menu-icon"/>
+        </label>
+        <input type="checkbox" name="" id="menu-toggle" />
         <ul class="navbar-list">
           <li><a href="index.html">Inicio</a></li>
           <li><a href="historia.html">Historia</a></li>
@@ -63,9 +68,9 @@
       </section>
       <section id="info">
         <div class="info-actualidad">
-          <p>
-            <p>A lo largo de sus décadas de existencia, el Atelier de las Artes Visuales se enorgullece de haber graduado a más de <span>1500 artistas talentosos de diversas partes del mundo.</span> Estos graduados han llevado consigo las enseñanzas y la inspiración del Atelier, destacándose en la escena artística global y contribuyendo a la diversidad y vitalidad del mundo del arte. Mirando hacia el futuro, nuestro compromiso es seguir guiando y apoyando a cada estudiante para alcanzar sus metas artísticas individuales. Nos proponemos incrementar la diversidad en nuestras filas y expandir nuestras colaboraciones internacionales. Nuestra visión es convertirnos en un epicentro de innovación artística y un semillero de talento reconocido mundialmente, alcanzando nuevas alturas y dejando una marca duradera en la escena artística global.</p>
-          </p>
+            <p>
+              A lo largo de sus décadas de existencia, el Atelier de las Artes Visuales se enorgullece de haber graduado a más de <span>1500 artistas talentosos de diversas partes del mundo.</span> Estos graduados han llevado consigo las enseñanzas y la inspiración del Atelier, destacándose en la escena artística global y contribuyendo a la diversidad y vitalidad del mundo del arte. Mirando hacia el futuro, nuestro compromiso es seguir guiando y apoyando a cada estudiante para alcanzar sus metas artísticas individuales. Nos proponemos incrementar la diversidad en nuestras filas y expandir nuestras colaboraciones internacionales. Nuestra visión es convertirnos en un epicentro de innovación artística y un semillero de talento reconocido mundialmente, alcanzando nuevas alturas y dejando una marca duradera en la escena artística global.
+            </p>
         </div>
         <img src="./assets/exterior.act.jpeg" alt="" />
       </section>

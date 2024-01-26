@@ -25,7 +25,7 @@ body {
   background-image: url("./bg.jpg");
 }
 /* Nav */
-.navbar {
+#navbar {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #183540 92%), #049dbf;
   display: flex;
   align-items: center;
@@ -40,15 +40,17 @@ body {
 
 .navbar-list {
   display: flex;
-  gap: 40px;
+  gap: 50px;
   padding-right: 50px;
   font-size: 15px;
   font-weight: 400;
+  align-items: center;
+
 }
 
-.navbar img {
+.logo {
   width: 200px;
-  padding: 15px 15px;
+  padding: 15px;
 }
 
 .navbar-list a {
@@ -58,6 +60,15 @@ body {
 .navbar-list li:first-child a {
   color: var(--naranja-pastel);
   font-weight: 900;
+}
+
+#menu-toggle,
+.menu-label{
+  display: none;
+}
+
+.menu-icon{
+  width: 60px;
 }
 
 /* MAIN */
@@ -93,7 +104,7 @@ main {
   display: flex;
   align-items: center;
   width: 70%;
-  padding-left: 300px;
+  margin-left: 100px;
 }
 
 .info-historia p {
@@ -121,12 +132,14 @@ main {
   height: 10%;
   border: solid var(--naranja-pastel);
   border-radius: 10px;
+  margin-right: 100px;
 }
 
 .info-actualidad {
   width: 65%;
   display: flex;
   align-items: center;
+  margin-left: 270px;
 }
 
 .info-actualidad p {
@@ -474,9 +487,6 @@ h3 {
 }
 
 .container-reg {
-  /* display: flex;
-  justify-content: center;
-  width: 100%; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -484,7 +494,7 @@ h3 {
   height: 480px;
   position: absolute;
   bottom: 260px;
-  left: 677px;
+  left: 505px;
 }
 
 .switch {

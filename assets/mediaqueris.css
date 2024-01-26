@@ -1,0 +1,225 @@
+:root {
+  --background: #011f26;
+  --celeste: #05d8f0;
+  --rosa: #f24162;
+  --naranja-pastel: #f29d7e;
+  --naranja: #f25757;
+  --text-white: #def3f9;
+
+  /* BACKGROUND CARD */
+  --background-card: #142837;
+}
+
+@media (max-width: 992px) {
+  /* navbar */
+
+  .navbar-list {
+    align-items: center;
+    font-size: 14px;
+    gap: 19px;
+  }
+
+  #info {
+    width: 100%;
+    margin-left: -280px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Historia */
+
+  #info img {
+    margin-right: -200px;
+    margin-top: 50px;
+  }
+
+  .info-historia {
+    padding-left: 150px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .info-actualidad {
+    /* margin-left: 530px; */
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .info-actualidad p {
+    margin-right: 50px;
+  }
+
+  /* Profes */
+
+  #card {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cards {
+    width: 50%;
+    height: 50vh;
+  }
+
+  .info-card p {
+    font-size: 13px;
+  }
+
+  .info-card h3 {
+    margin-top: 10px;
+    font-size: 18px;
+  }
+
+  .info-card img {
+    margin-top: 50px;
+    height: 90px;
+  }
+
+  /* Campus */
+
+  .container-reg {
+    left: 208px;
+  }
+
+  /* Contacto */
+
+  .contact-container {
+    width: 60%;
+  }
+}
+
+@media (max-width: 890px) {
+  .navbar-list {
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    text-align: right;
+    z-index: 2;
+    right: 0.1%;
+    gap: 20px;
+    width: 90%;
+    background-color: var(--background);
+    height: 270px;
+    border: 2px solid var(--rosa);
+    border-top: 0;
+    left: 5%;
+    top: 80px;
+  }
+
+  .prox-expo-1 h3 {
+    width: 350px;
+  }
+
+  .prox-expo-1 img {
+    width: 400px;
+  }
+
+  .contact-container {
+    height: 460px;
+    display: flex;
+  }
+
+  .contacto-body,
+  .contacto-top,
+  .contacto-email,
+  .consulta,
+  .enviar-consulta {
+    margin-left: -30px;
+  }
+
+  .contacto-body {
+    width: 370px;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 700px) {
+  .navbar-list {
+    z-index: 2;
+    display: none;
+  }
+
+  .menu-label {
+    display: flex;
+    order: 20;
+    cursor: pointer;
+  }
+
+  #menu-toggle:checked ~ .navbar-list {
+    display: flex;
+  }
+
+  .menu-label img {
+    display: flex;
+    width: 50px;
+  }
+
+  @keyframes slideDown {
+    0% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  .navbar-list {
+    animation: slideDown 0.3s ease forwards;
+  }
+
+  .navbar-list {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .navbar-list.active {
+    opacity: 1;
+  }
+
+  .info-historia{
+    width: 100%;
+  }
+
+  #info img{
+    width: 50%;
+    margin-left: 80px;
+  }
+
+  .info-actualidad p{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-right: -18px;
+  }
+
+  #exposiciones{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .prox-expo-1 h3 {
+    width: 277px;
+  }
+
+  .switch{
+    bottom: 25px;
+  }
+
+  .container-reg{
+    bottom: 117px;
+    left: 50px;
+  }
+
+  .contact-container{
+    width: 90%;
+    
+  }
+}

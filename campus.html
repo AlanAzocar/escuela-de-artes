@@ -4,16 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="stylesheet" href="./assets/mediaqueris.css">
     <link rel="icon" href="./assets/logo.png" type="image/png">
     <title>Campus/Biblioteca</title>
   </head>
   <body>
     <!-- NAVBAR -->
-    <section>
+    <section id="navbar">
+      <a href="index.html">
+        <img src="./assets/logo-completo.png" alt="" class="logo" />
+      </a>
       <div class="navbar">
-        <a href="index.html">
-          <img src="./assets/logo-completo.png" alt="" />
-        </a>
+        <label for="menu-toggle" class="menu-label">
+          <img src="./assets/menu.png" alt="" class="menu-icon"/>
+        </label>
+        <input type="checkbox" name="" id="menu-toggle" />
         <ul class="navbar-list">
           <li><a href="index.html">Inicio</a></li>
           <li><a href="historia.html">Historia</a></li>
